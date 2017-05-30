@@ -10,11 +10,15 @@
 
 </body>
 <script>
-var a = 1;
-console.log(window.a); //1
+var map = new Map();
 
-let b =1;
-console.log(window.b); //undefined
+map.set('first','hello');
+map.set('second','world');
+console.log(map);
+for(let [key,val] of map) {
+	console.log(key + " is " + val);
+}
+
 </script>
 
 </html>
